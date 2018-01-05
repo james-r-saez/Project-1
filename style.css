@@ -1,0 +1,40 @@
+.grid_container {
+	display: grid;
+	grid-template-rows: 15vw 15vw;
+	grid-template-columns: 15vw 15vw;
+	grid-template-areas:
+	'green red'
+	'yellow blue';
+}
+.flex_container {
+	display: flex;
+	justify-content: center;
+}
+.red {
+	background-color: red;
+	border-radius: 0 100% 0 0;
+}
+.blue {
+	background-color: blue;
+	border-radius: 0 0 100% 0;
+}
+.green {
+	background-color: green;
+	border-radius: 100% 0 0 0;
+}
+.yellow {
+	background-color: yellow;
+	border-radius: 0 0 0 100%;
+}
+button {
+	color: white;
+	padding: .5em;
+	background-color: black;
+	border: 2px solid black;
+	border-radius: 5%;
+	font-size: 1.5em;
+}
+h1, .startButton {
+	display: flex;
+	justify-content: center;
+}
