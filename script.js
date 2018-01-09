@@ -14,7 +14,6 @@ gameboard.click(function() {
 $("button").click(play);
 
 function play() {
-  //playerArr = [];
   $("button").hide();
   var random = Math.floor(Math.random() * 4);
   var randDiv = gameboard.eq(random)[0];
