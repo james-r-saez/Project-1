@@ -27,15 +27,16 @@ function play(){
 	$("h1").text(`Level ${counter}! Click the flashed colors!`);
 }
 
-function checkIfRight(){
+function checkIfRight(color){
 	if (playerArr.length === generatedArr.length){
 			// console.log('this is playerarr length:', playerArr.length);
 			// console.log('this is generatedArr length:', generatedArr.length);
 		for (var i=0; i < playerArr.length; i++){
 			for (var j=0; j < generatedArr.length; j++){
+			//if (playerArr[i] === color) {
 				console.log("this is genarr j", generatedArr[j])
 				console.log("this is playerarr j", playerArr[i])
-				if (playerArr[i].className ===  generatedArr[j].className) {
+				if (playerArr[i][i] ===  generatedArr[j][j]) {
 					win();
 				}
 				else {
